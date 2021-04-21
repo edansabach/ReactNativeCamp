@@ -6,7 +6,9 @@ import { ConfigureStore } from "./redux/configureStore";
 const store = ConfigureStore();
 
 export default function App() {
-  <Provider store={store}>
-    <Main />
-  </Provider>;
+  return (
+    <Provider store={store}>
+      <Main />
+    </Provider>
+  );
 }

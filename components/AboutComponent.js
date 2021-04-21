@@ -46,7 +46,7 @@ class About extends Component {
         <Mission />
         <Card title="Community Partners">
           <FlatList
-            data={this.props.parnters.partners}
+            data={this.props.partners.partners}
             renderItem={renderPartnerItem}
             keyExtractor={(item) => item.id.toString()}
           />
